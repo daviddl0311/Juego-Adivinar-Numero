@@ -1,0 +1,176 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(Fondo_Azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", serif;
+}
+section {
+    height: 85vh;
+}
+img {
+    width: 31rem;
+    height: 20rem;
+}
+footer {
+    padding: 2rem;
+}
+ul {
+    position: absolute;
+}
+li {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.center {
+    display: grid;
+    place-content: center;
+}
+.text {
+    color: rgb(212, 212, 212);
+    
+}
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+.reset {
+    color: white;
+    margin-top: 1rem;
+}
+.inputUser {
+    width: 25rem;
+    height: 3rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+}
+.logo-robot {
+    color: white;
+    font-size: 5rem;
+}
+.enlace2 {
+    color: rgb(245, 240, 240);
+    font-size: 1.1rem;
+}
+.flex-right {
+    display: flex;
+    flex-direction: center;
+    justify-content: right;
+    gap: 1.8rem;
+}
+.newM {
+    color: white;
+}
+.not {
+    position: relative;
+    left: 100rem;
+    background-color: white;
+    padding: .8rem;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    transition: all .3s;
+}
+.title1 {
+    color: white;
+    font-size: 2.5rem;
+}
+.title2 {
+    color: rgb(212, 212, 212);
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+.btn-Play {
+    margin-top: 2rem; 
+}
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+  }
+  @keyframes shake-horizontal {
+    0%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateX(10px);
+              transform: translateX(10px);
+    }
+    80% {
+      -webkit-transform: translateX(8px);
+              transform: translateX(8px);
+    }
+    90% {
+      -webkit-transform: translateX(-8px);
+              transform: translateX(-8px);
+    }
+}
+  
+#btnEnviar {
+    font-size: 1rem;
+    width: 5rem;
+    height: 3rem;
+    padding: .3rem;
+    background-color: #5498FF;
+    border-radius: .2rem;
+    color: white;
+}
+#btnPlay {
+    background-color: #2D82E2;
+    color: white;
+    width: 12rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: .2rem;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
