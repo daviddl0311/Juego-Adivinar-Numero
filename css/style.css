@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(img/Fondo_Azul.png);
+    background-image: url(../img/Fondo_Azul.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins", serif;
@@ -173,6 +173,10 @@ h2 {
     padding: 1.5rem;
     font-size: 1.8rem;
     border-radius: .2rem;
+    transition: all .3s;
+}
+#btnPlay:hover {
+    background-color: #5498FF;
 }
 
 .column-2 {
