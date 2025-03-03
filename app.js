@@ -28,28 +28,36 @@ btnEnviar.addEventListener("click", () => {
                 let item = document.createElement("li");
                 item.setAttribute("id", "msgFun");
                 item.textContent = "El número debe ser MENOR";
+                
                 item.classList = "not shake-horizontal";
                 box.appendChild(item);
                 
                 let ani = document.getElementById("msgFun");
+                
                 setTimeout(() => {
                     box.removeChild(item);
                     ani.style.display = "none";
                 }
                 , 7000);
+
+                clear();
             } else {
                 let item = document.createElement("li");
                 item.setAttribute("id", "msgFun");
                 item.textContent = "El número debe ser MAYOR";
+
                 item.classList = "not shake-horizontal";
                 box.appendChild(item);
 
                 let ani = document.getElementById("msgFun");
+                
                 setTimeout(() => {
                     box.removeChild(item);
                     ani.style.display = "none";
                 }
                 , 7000);
+
+                clear();
             }
     
             intentos++
@@ -64,3 +72,8 @@ btnEnviar.addEventListener("click", () => {
         }
     }
 });
+
+function clear() {
+    numberUser.value = "";
+    numberUser.focus();
+}
