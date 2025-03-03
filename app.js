@@ -20,7 +20,7 @@ btnEnviar.addEventListener("click", () => {
         if(numberUser.value == numberSecret) {
             box.style.display = "none";
             newMess.textContent = `¡GANASTE!, el número secreto era: ${numberSecret}`;
-            document.getElementById("imgChange").src = "Img_Win.png";
+            document.getElementById("imgChange").src = "img/Img_Win.png";
             numberUser.disabled = true;
             btnEnviar.disabled = true;
         } else {
@@ -64,7 +64,7 @@ btnEnviar.addEventListener("click", () => {
     
             if(intentos > maxIntentos) {
                 box.style.display = "none";
-                document.getElementById("imgChange").src = "Img_No.png";
+                document.getElementById("imgChange").src = "img/Img_No.png";
                 newMess.textContent = `¡Alcanzaste el número máximo de intentos!, el número secreto era: ${numberSecret}`;
                 numberUser.disabled = true;
                 btnEnviar.disabled = true;
